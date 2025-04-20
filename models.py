@@ -5,7 +5,7 @@ class ImageMetadata(BaseModel):
     filename: str
     user_id: str
     image_url: HttpUrl
-    description: Optional[str]
+    description: Optional[str] = ""
     tags: Optional[str]
     timestamp: Optional[int]
 
@@ -14,4 +14,4 @@ class ImageUploadResponse(BaseModel):
     image_url: HttpUrl
 
 class DeleteResponse(BaseModel):
-    message: str
+    message: Optional[str] = ""

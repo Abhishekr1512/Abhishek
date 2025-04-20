@@ -27,7 +27,7 @@
 ## Local Setup
 ```bash
 pip install -r requirements.txt
-uvicorn main:app --reload
+python main.py
 ```
 
 ## Run Tests
